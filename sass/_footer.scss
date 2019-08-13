@@ -1,0 +1,140 @@
+
+
+/******************************************************/
+/*************** START: FOOTER SECTION ****************/
+/******************************************************/
+
+.footer {
+    
+    .container {
+        
+        .copyright {
+            text-align: left;
+            padding: 56px 10px;
+            
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color:  #d2054d;
+            }
+            
+        }
+        
+        .socialMedia {
+            text-align: left;
+            padding: 47px 0;
+        }
+        
+    } 
+    
+} 
+
+
+/** Social Media Icons **/
+.footer {
+    
+    ul {
+        list-style-type: none;
+        float: right;
+        
+        li {
+            float: left;
+            
+            a {
+                text-decoration: none;
+                float: left;
+                margin: 0 10px;
+                padding: 9px 5px;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #d2054d;
+                background-color: #d2054d;
+                color: #fff;
+                border-radius: 100px;
+                text-align: center;
+                -webkit-transition: all .5s;
+                transition: all .5s;
+            }
+            
+            a:hover {
+                background-color: #fff;
+                color: #d2054d;
+                border: 1px solid #d2054d;
+            }
+    
+        }
+  
+    }   
+    
+} 
+
+
+/** Scroll To Top **/
+
+.scroll-to-top {
+     right:20px;
+     bottom:20px;
+     font-size: 25px;
+     padding: 5px 15px 10px;
+     background-color: #d2054d;
+     color: #fff;
+     border: 1px solid #fff;
+     position:fixed;
+     text-decoration: none; 
+     -webkit-transition: .3s; 
+     transition: .3s;
+     display: none;
+}
+
+.scroll-to-top:hover {  
+     background-color: #ed7fa6;
+     background-color: #7e0c34;
+}
+
+/*************** MEDIA QUERIES FOR THE FOOTER SECTION ****************/
+
+@media only screen and (max-width: 768px) {
+    
+    .footer {
+        
+        .container {
+            
+            .copyright, 
+            .socialMedia {
+                text-align: center;
+                width: 100%;
+             }
+            
+            .copyright {
+                padding: 56px 10px 10px;
+            }
+            
+            .socialMedia {
+                padding: 0  0  47px;
+            }
+            
+        }
+        
+        ul {
+            float: none;
+            
+            li {
+                text-align: center;
+                float: none;
+                display: inline-block;
+            }
+            
+        }
+        
+        .col {
+            margin: 0;
+        }
+        
+    } 
+     
+}
+
+
+/******************************************************/
+/*************** END: FOOTER SECTION ******************/
+/******************************************************/

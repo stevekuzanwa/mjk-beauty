@@ -1,0 +1,103 @@
+
+
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+
+.testimonials {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url(../images/photos/client/testimonials.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/photos/client/testimonials.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 325px;
+    color: #fff;
+    margin-top: 52px;
+    
+    .container {
+        
+       p {
+            font-size: 16px;
+            text-align: center;
+            padding: 80px   10px 120px;
+            width: 50%;
+            margin: 0 auto;
+            line-height: 150%;
+
+       } 
+        
+    } 
+    
+    
+}
+
+
+/*************** MEDIA QUERIES FOR THE TESTIMONIALS SECTION ****************/
+
+@media only screen and (max-width: 1024px) {
+    
+    .testimonials {
+        
+        .container {
+            
+           p {
+             width: 80%; 
+            
+           } 
+            
+        }
+        
+   }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .testimonials {
+        
+        .container {
+            
+           p {
+             width: 100%;
+           } 
+            
+        }    
+    }  
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .testimonials {
+        
+        .container {
+            
+            p {
+               padding: 40px   10px 100px;
+               width: 100%;
+            } 
+        } 
+           
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .testimonials {
+        
+        .container  {
+            
+           p {
+               padding: 30px   10px 80px;
+               width: 100%;
+           } 
+            
+        } 
+        
+    } 
+    
+}
+
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/

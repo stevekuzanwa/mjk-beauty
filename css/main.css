@@ -1,0 +1,1125 @@
+/*****************************************************/
+/*************** START GENERAL STYLES ****************/
+/*****************************************************/
+/*****************************************************/
+/*************** START GENERAL STYLES ****************/
+/*****************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/*****************************************************/
+/*************** END GENERAL STYLES ******************/
+/*****************************************************/
+/*****************************************************/
+/*************** END GENERAL STYLES ******************/
+/*****************************************************/
+/******************************************************/
+/*************** START: HEADER SECTION ****************/
+/******************************************************/
+/******************************************************/
+/*************** START: HEADER SECTION ****************/
+/******************************************************/
+/********************************/
+/*********** Mixins *************/
+/********************************/
+/********************************/
+/********** END Mixins **********/
+/********************************/
+/** Navigation **/
+.header .navigation {
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  position: fixed;
+  top: 0; }
+  .header .navigation h1 {
+    float: left;
+    padding: 16px 0 16px 10px;
+    color: #fff;
+    font-size: 26px;
+    z-index: 999; }
+    .header .navigation h1 a {
+      text-decoration: none;
+      color: #fff; }
+  .header .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; }
+    .header .navigation ul li {
+      float: left; }
+      .header .navigation ul li a:link,
+      .header .navigation ul li a:visited {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        padding: 24px  10px 24px;
+        text-decoration: none;
+        color: #fff;
+        -webkit-transition: .3s;
+        transition: .3s; }
+      .header .navigation ul li a:hover,
+      .header .navigation ul li a:active {
+        color: #e85186; }
+
+/** StickyNav with jQuery**/
+.is-sticky .navigation {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #b5b2b2;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  z-index: 9999; }
+  .is-sticky .navigation h1 {
+    float: left;
+    padding: 16px 0 16px 10px;
+    font-size: 26px;
+    color: #d2054d; }
+    .is-sticky .navigation h1 a {
+      color: #d2054d; }
+  .is-sticky .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; }
+    .is-sticky .navigation ul li {
+      float: left; }
+      .is-sticky .navigation ul li a:link,
+      .is-sticky .navigation ul li a:visited {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        padding: 24px  10px 24px;
+        text-decoration: none;
+        color: #d2054d;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
+      .is-sticky .navigation ul li a:hover,
+      .is-sticky .navigation ul li a:active {
+        color: #000; }
+      .is-sticky .navigation ul li a.active {
+        background-color: #d2054d;
+        color: #fff; }
+
+/** Mobile Nav Menu Icon **/
+.mobileNavIcon {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: none; }
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+.change .bar2 {
+  opacity: 0; }
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px);
+  transform: rotate(45deg) translate(-7px, -6px); }
+
+.is-sticky .navigation .mobileNavIcon .bar1,
+.is-sticky .navigation .mobileNavIcon .bar2,
+.is-sticky .navigation .mobileNavIcon .bar3 {
+  background-color: #d2054d; }
+
+/** BG Slides **/
+.header #home {
+  z-index: 1;
+  position: relative;
+  height: 650px; }
+.header .slides {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .header .slides .slide1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../images/photos/header/bg-services-to-women-girls.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/photos/header/bg-services-to-women-girls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-love-your-hair.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-love-your-hair.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-be-unique.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-be-unique.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-be-glamorous.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-be-glamorous.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+
+/** Header Subtitle ***/
+.header .title {
+  text-align: center;
+  font-size: 51px;
+  color: #fff;
+  width: 100%;
+  padding: 200px 20px  0;
+  background-color: transparent; }
+.header .details {
+  text-align: center;
+  font-size: 40px;
+  padding: 0 20px;
+  font-weight: 300;
+  color: #fff; }
+
+/** Button Area **/
+.header .buttons {
+  text-align: center;
+  margin-top: 50px; }
+  .header .buttons a:link,
+  .header .buttons a:visited {
+    border: 2px solid #fff;
+    padding: 10px  16px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none; }
+  .header .buttons a:hover,
+  .header .buttons a:active {
+    color: #d2054d;
+    background-color: white; }
+
+/*************** MEDIA QUERIES FOR THE HEADER SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .header .slides .slide1,
+  .header .slides .slide2,
+  .header .slides .slide3,
+  .header .slides .slide4 {
+    height: 500px; }
+
+  .header .title {
+    font-size: 41px;
+    width: 100%;
+    margin-top: 136px;
+    padding: 0 10px; }
+  .header .details {
+    font-size: 30px;
+    padding: 0 10px; } }
+@media only screen and (max-width: 768px) {
+  /** Mobile Navigation **/
+  .mobileNavIcon {
+    display: block; }
+
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.4); }
+
+  .header .navigation h1 {
+    color: #fff; }
+
+  .header .navigation h1 {
+    font-size: 18px;
+    float: none; }
+
+  .header .navigation ul {
+    float: none;
+    display: none;
+    background-color: #d2054d; }
+
+  .header .navigation ul li {
+    float: none; }
+
+  .header .navigation ul li a:hover,
+  .header .navigation ul li a:active {
+    color: #000; }
+
+  .is-sticky .navigation h1 {
+    color: #d2054d; }
+
+  .is-sticky .navigation ul {
+    background-color: #d2054d;
+    border-top: 1px solid #b5b2b2; }
+
+  .is-sticky .navigation nav ul a:link,
+  .is-sticky .navigation nav ul a:visited {
+    color: #fff; }
+
+  .is-sticky .navigation nav ul a:hover,
+  .is-sticky .navigation nav ul a:active {
+    color: #000; }
+
+  .is-sticky .navigation nav ul a.active {
+    color: #000; }
+
+  /** BG Slides **/
+  .header .slides .slide1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../images/photos/header/small-bg-services-to-women-girls.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/photos/header/small-bg-services-to-women-girls.jpg); }
+  .header .slides .slide2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-love-your-hair.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-love-your-hair.jpg); }
+  .header .slides .slide3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-be-unique.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-be-unique.jpg); }
+  .header .slides .slide4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-be-glamorous.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-be-glamorous.jpg); } }
+@media only screen and (max-width: 650px) {
+  .header .title {
+    font-size: 31px; }
+  .header .details {
+    font-size: 25px; }
+  .header .buttons {
+    padding: 0 10px; } }
+@media only screen and (max-width: 650px) {
+  .header .details {
+    display: none; }
+    .header .details br {
+      display: none; } }
+@media only screen and (max-width: 350px) {
+  .header .navigation h1 {
+    font-size: 16px; }
+  .header .title {
+    font-size: 25px; }
+  .header .details {
+    font-size: 20px; }
+  .header .buttons {
+    margin-top: 30px; }
+    .header .buttons a {
+      padding: 10px  16px;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      text-align: center; } }
+/****************************************************/
+/*************** END: HEADER SECTION ****************/
+/****************************************************/
+/****************************************************/
+/*************** END: HEADER SECTION ****************/
+/****************************************************/
+/******************************************************/
+/************** START: SERVICES SECTION ***************/
+/******************************************************/
+/******************************************************/
+/************** START: SERVICES SECTION ***************/
+/******************************************************/
+/********************************/
+/*********** Mixins *************/
+/********************************/
+/********************************/
+/********** END Mixins **********/
+/********************************/
+.services {
+  margin-top: 585px; }
+  .services .container {
+    padding: 81px   10px   0;
+    text-align: center; }
+
+/** Services Introduction **/
+.services .title {
+  font-size: 30px;
+  margin-bottom: 28px; }
+.services .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #d2054d;
+  margin: 0 auto;
+  margin-top: 16px; }
+.services p {
+  font-size: 16px;
+  line-height: 140%; }
+.services #ourServices {
+  max-width: 800px;
+  margin: 0 auto; }
+  .services #ourServices p {
+    max-width: 800px;
+    margin: 0 auto; }
+
+/** what_We_do **/
+.services .what_We_do {
+  margin-bottom: 101px; }
+.services h2 {
+  margin-bottom: 18px; }
+.services #hair {
+  background-image: url(../images/icons/hair.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 150px; }
+.services #makeUp {
+  background-image: url(../images/icons/makeUp.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 150px; }
+.services #nails {
+  background-image: url(../images/icons/nail.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 150px; }
+.services .row h2 {
+  font-size: 20px; }
+.services .row p {
+  font-size: 16px;
+  margin-bottom: 58px; }
+
+/** Button Area **/
+.services a:link,
+.services a:visited {
+  padding: 20px 28px;
+  background-color: #d2054d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent; }
+.services a:hover,
+.services a:active {
+  background-color: #fff;
+  color: #d2054d;
+  border: 2px solid #d2054d; }
+
+/** POPUP - SERVICES READ MORE CONTENT  **/
+.services-popup {
+  position: relative;
+  background: #fff;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px; }
+  .services-popup .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 50%;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    width: 30%;
+    margin: 0 35%;
+    padding: 10px; }
+  .services-popup img {
+    width: 100%; }
+  .services-popup P {
+    padding: 20px; }
+
+/*************** MEDIA QUERIES FOR THE SERVICES SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .services {
+    margin-top: 435px; } }
+@media only screen and (max-width: 800px) {
+  .services .col {
+    margin: 0 0 91px; }
+  .services .row {
+    width: 100%; }
+    .services .row h2 {
+      font-size: 22px; }
+  .services p {
+    font-size: 16px; }
+
+  .services-popup .overlay {
+    display: none; } }
+@media only screen and (max-width: 480px) {
+  .services .title {
+    font-size: 25px; }
+  .services .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+/******************************************************/
+/*************** END: SERVICES SECTION ****************/
+/******************************************************/
+/******************************************************/
+/*************** END: SERVICES SECTION ****************/
+/******************************************************/
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+.aboutUs {
+  height: 600px; }
+  .aboutUs div {
+    float: left; }
+  .aboutUs .ourCompany {
+    width: 50%;
+    background-color: #d2054d;
+    color: #fff;
+    height: 600px;
+    padding: 81px   20px   0;
+    text-align: center; }
+  .aboutUs .aboutUsImage {
+    background-image: url(../images/photos/about-mjk-beauty-salon/mjk-beauty-salon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: #d2054d;
+    width: 50%;
+    height: 600px; }
+
+/** AboutUs Title **/
+.aboutUs .ourCompany .title {
+  font-size: 30px; }
+.aboutUs .ourCompany .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 16px; }
+.aboutUs .ourCompany h2 {
+  margin-bottom: 28px; }
+
+/** AboutUs Description **/
+.aboutUs .ourCompany p {
+  font-size: 16px;
+  line-height: 140%; }
+
+/*************** MEDIA QUERIES FOR THE ABOUT US SECTION ****************/
+@media only screen and (max-width: 768px) {
+  .aboutUs .ourCompany {
+    padding: 71px   10px   0; } }
+@media only screen and (max-width: 560px) {
+  .aboutUs {
+    height: auto; }
+    .aboutUs div {
+      float: none; }
+    .aboutUs .ourCompany {
+      width: 100%;
+      height: auto;
+      padding-bottom: 60px; }
+    .aboutUs .aboutUsImage {
+      width: 100%;
+      height: 600px; }
+
+  /** AboutUs Title **/
+  .aboutUs .ourCompany .title {
+    font-size: 25px; }
+  .aboutUs .ourCompany .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/
+/**********************************************************/
+/**************** START: SHOWCASE SECTION *****************/
+/**********************************************************/
+/**********************************************************/
+/**************** START: SHOWCASE SECTION *****************/
+/**********************************************************/
+.showcase .container {
+  text-align: center;
+  padding: 81px   10px   0; }
+
+/** Showcase Introduction **/
+.showcase .title {
+  font-size: 30px; }
+.showcase .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #d2054d;
+  margin: 0 auto;
+  margin-top: 16px; }
+.showcase h2 {
+  margin-bottom: 28px; }
+.showcase p {
+  font-size: 16px;
+  line-height: 140%; }
+
+/** Showcase Menu **/
+.showcase ul.portfolio-filter {
+  list-style-type: none;
+  margin: 30px auto 28px;
+  padding: 0;
+  width: 80%;
+  display: block; }
+  .showcase ul.portfolio-filter li {
+    display: inline-block; }
+    .showcase ul.portfolio-filter li a {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      cursor: pointer; }
+    .showcase ul.portfolio-filter li a.active {
+      color: #d2054d; }
+
+/** showcase Gallery **/
+.showcase ul.showcaseGallery {
+  list-style-type: none; }
+  .showcase ul.showcaseGallery li {
+    width: 20%;
+    float: left;
+    overflow: hidden; }
+  .showcase ul.showcaseGallery a {
+    text-decoration: none; }
+  .showcase ul.showcaseGallery img {
+    width: 100%;
+    display: block;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+
+.showcase ul.showcaseGallery li img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+/** showcase Gallery Mixitup **/
+#showcase-grid .mix {
+  display: none; }
+
+/*************** MEDIA QUERIES FOR THE SHOWCASE SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .showcase ul.showcaseGallery li {
+    width: 33.33333%; } }
+@media only screen and (max-width: 768px) {
+  .showcase ul.showcaseGallery li {
+    width: 50%; } }
+@media only screen and (max-width: 480px) {
+  .showcase .title {
+    font-size: 25px; }
+  .showcase .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+@media only screen and (max-width: 320px) {
+  .showcase .container {
+    padding: 71px   10px   0; } }
+/**********************************************************/
+/****************** END: SHOWCASE SECTION *****************/
+/**********************************************************/
+/**********************************************************/
+/****************** END: SHOWCASE SECTION *****************/
+/**********************************************************/
+/**************************************************/
+/************** START: TEAM SECTION ***************/
+/**************************************************/
+/**************************************************/
+/************** START: TEAM SECTION ***************/
+/**************************************************/
+.meetOurStylists .container {
+  padding: 81px   10px   0;
+  text-align: center; }
+
+/** Team Introduction **/
+.meetOurStylists .title {
+  font-size: 30px; }
+.meetOurStylists .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #d2054d;
+  margin: 0 auto;
+  margin-top: 16px; }
+.meetOurStylists h2 {
+  margin-bottom: 28px; }
+.meetOurStylists p {
+  font-size: 16px;
+  line-height: 140%; }
+.meetOurStylists .ourStylists p {
+  max-width: 800px;
+  margin: 0 auto; }
+
+/** Team Members **/
+.teamMembers {
+  margin-top: 28px; }
+
+.meetOurStylists ul.teamMembers {
+  list-style-type: none; }
+  .meetOurStylists ul.teamMembers img {
+    width: 100%; }
+  .meetOurStylists ul.teamMembers li p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold; }
+    .meetOurStylists ul.teamMembers li p span {
+      font-size: 24px;
+      color: #d2054d; }
+
+/*************** MEDIA QUERIES FOR THE TEAM SECTION ****************/
+@media only screen and (max-width: 768px) {
+  .meetOurStylists ul.teamMembers .col {
+    margin: 1% 0 1%; }
+  .meetOurStylists ul.teamMembers li {
+    width: 100%;
+    padding: 0  180px; }
+    .meetOurStylists ul.teamMembers li p {
+      font-size: 16px;
+      margin-top: 0px;
+      margin-bottom: 10px; }
+      .meetOurStylists ul.teamMembers li p span {
+        font-size: 18px; } }
+@media only screen and (max-width: 600px) {
+  .meetOurStylists ul.teamMembers li {
+    width: 100%;
+    padding: 0 120px; } }
+@media only screen and (max-width: 480px) {
+  .meetOurStylists .title {
+    font-size: 25px; }
+  .meetOurStylists .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; }
+  .meetOurStylists ul.teamMembers li {
+    width: 100%;
+    padding: 0  50px; } }
+@media only screen and (max-width: 320px) {
+  .meetOurStylists .container {
+    padding: 71px   10px   0;
+    text-align: center; }
+  .meetOurStylists ul.teamMembers li {
+    width: 100%;
+    padding: 0; } }
+/************************************************/
+/************** END: TEAM SECTION ***************/
+/************************************************/
+/************************************************/
+/************** END: TEAM SECTION ***************/
+/************************************************/
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+.testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/photos/client/testimonials.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/photos/client/testimonials.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 325px;
+  color: #fff;
+  margin-top: 52px; }
+  .testimonials .container p {
+    font-size: 16px;
+    text-align: center;
+    padding: 80px   10px 120px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 150%; }
+
+/*************** MEDIA QUERIES FOR THE TESTIMONIALS SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .testimonials .container p {
+    width: 80%; } }
+@media only screen and (max-width: 768px) {
+  .testimonials .container p {
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
+  .testimonials .container p {
+    padding: 40px   10px 100px;
+    width: 100%; } }
+@media only screen and (max-width: 320px) {
+  .testimonials .container p {
+    padding: 30px   10px 80px;
+    width: 100%; } }
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+/********************************/
+/*********** Mixins *************/
+/********************************/
+/********************************/
+/********** END Mixins **********/
+/********************************/
+.contactUs .container {
+  padding: 81px   10px   0;
+  text-align: center; }
+
+/** Contact US Introduction **/
+.contactUs .title {
+  font-size: 30px; }
+.contactUs .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #d2054d;
+  margin: 0 auto;
+  margin-top: 16px; }
+.contactUs h2 {
+  margin-bottom: 28px; }
+.contactUs p {
+  font-size: 16px;
+  line-height: 140%; }
+.contactUs .getInTouch p {
+  max-width: 800px;
+  margin: 0 auto; }
+
+/** Contact Details **/
+.contactUs #contact_details {
+  padding: 0  10px;
+  margin-top: 61px; }
+
+/** Contact Detail Icons **/
+.contactUs #address {
+  background-image: url(../images/icons/location.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 80px; }
+.contactUs #phoneNumber {
+  background-image: url(../images/icons/telephone.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 80px; }
+.contactUs #writeMail {
+  background-image: url(../images/icons/email.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 80px; }
+
+/** Contact FORM **/
+.contactUs #contact-form {
+  padding: 0 10px 71px;
+  text-align: center; }
+.contactUs input[type=text],
+.contactUs input[type=tel],
+.contactUs input[type=email],
+.contactUs textarea {
+  padding: 20px;
+  border: 2px solid #000;
+  color: #000;
+  font-size: 16px;
+  width: 100%; }
+.contactUs textarea {
+  max-width: 100%;
+  min-height: 245px;
+  margin: 30px 0  0; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #636363; }
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #636363; }
+
+.contactUs input[type=submit] {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d2054d;
+  padding: 18px;
+  margin-top: 30px;
+  border: 3px solid transparent;
+  width: 260px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+.contactUs input[type=submit]:hover {
+  background-color: #fff;
+  color: #d2054d;
+  border: 3px solid  #d2054d; }
+
+.contactUs a {
+  text-decoration: none;
+  color: #000; }
+
+/*************** MEDIA QUERIES FOR THE CONTACT SECTION ****************/
+@media only screen and (max-width: 920px) {
+  .contactUs #address,
+  .contactUs #phoneNumber,
+  .contactUs #writeMail {
+    width: 100%;
+    margin: 1% 0 40px; }
+  .contactUs input[type=text],
+  .contactUs input[type=tel],
+  .contactUs input[type=email],
+  .contactUs textarea {
+    width: 100%;
+    margin: 1%  0; } }
+@media only screen and (max-width: 700px) {
+  .contactUs .form-elements {
+    width: 100%;
+    margin: 1% 0; }
+  .contactUs input[type=text],
+  .contactUs input[type=tel],
+  .contactUs input[type=email] {
+    margin: 0; } }
+@media only screen and (max-width: 480px) {
+  .contactUs .title {
+    font-size: 25px; }
+  .contactUs .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; }
+  .contactUs input[type=submit] {
+    margin: 15px 0 0; } }
+@media only screen and (max-width: 320px) {
+  .contactUs .container {
+    padding: 71px   10px   0;
+    text-align: center; }
+  .contactUs input[type=text],
+  .contactUs input[type=tel],
+  .contactUs input[type=email],
+  .contactUs textarea {
+    padding: 20px  10px; }
+  .contactUs input[type=submit] {
+    width: auto; } }
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/
+/****************************************************/
+/*************** START: MAP SECTION *****************/
+/****************************************************/
+/****************************************************/
+/*************** START: MAP SECTION *****************/
+/****************************************************/
+#map {
+  width: 100%;
+  height: 532px;
+  background-color: #d2054d; }
+
+/******************************************************/
+/***************** END: MAP SECTION *******************/
+/******************************************************/
+/******************************************************/
+/***************** END: MAP SECTION *******************/
+/******************************************************/
+/******************************************************/
+/*************** START: FOOTER SECTION ****************/
+/******************************************************/
+/******************************************************/
+/*************** START: FOOTER SECTION ****************/
+/******************************************************/
+.footer .container .copyright {
+  text-align: left;
+  padding: 56px 10px; }
+  .footer .container .copyright a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #d2054d; }
+.footer .container .socialMedia {
+  text-align: left;
+  padding: 47px 0; }
+
+/** Social Media Icons **/
+.footer ul {
+  list-style-type: none;
+  float: right; }
+  .footer ul li {
+    float: left; }
+    .footer ul li a {
+      text-decoration: none;
+      float: left;
+      margin: 0 10px;
+      padding: 9px 5px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d2054d;
+      background-color: #d2054d;
+      color: #fff;
+      border-radius: 100px;
+      text-align: center;
+      -webkit-transition: all .5s;
+      transition: all .5s; }
+    .footer ul li a:hover {
+      background-color: #fff;
+      color: #d2054d;
+      border: 1px solid #d2054d; }
+
+/** Scroll To Top **/
+.scroll-to-top {
+  right: 20px;
+  bottom: 20px;
+  font-size: 25px;
+  padding: 5px 15px 10px;
+  background-color: #d2054d;
+  color: #fff;
+  border: 1px solid #fff;
+  position: fixed;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: none; }
+
+.scroll-to-top:hover {
+  background-color: #ed7fa6;
+  background-color: #7e0c34; }
+
+/*************** MEDIA QUERIES FOR THE FOOTER SECTION ****************/
+@media only screen and (max-width: 768px) {
+  .footer .container .copyright,
+  .footer .container .socialMedia {
+    text-align: center;
+    width: 100%; }
+  .footer .container .copyright {
+    padding: 56px 10px 10px; }
+  .footer .container .socialMedia {
+    padding: 0  0  47px; }
+  .footer ul {
+    float: none; }
+    .footer ul li {
+      text-align: center;
+      float: none;
+      display: inline-block; }
+  .footer .col {
+    margin: 0; } }
+/******************************************************/
+/*************** END: FOOTER SECTION ******************/
+/******************************************************/
+/******************************************************/
+/*************** END: FOOTER SECTION ******************/
+/******************************************************/
+/****************************************************************************************************************/
+/**************************************** START: Customising Pulgins  *******************************************/
+/****************************************************************************************************************/
+/******************************************************************************/
+/******************* START: Customising The SLICK Plugin  *********************/
+/******************************************************************************/
+/** Dots **/
+.slick-dots {
+  bottom: 25px; }
+
+.slick-dots li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 1px solid #fff;
+  cursor: pointer; }
+
+.slick-dots li.slick-active {
+  background: #fff;
+  cursor: default; }
+
+/** Arrows **/
+.slick-prev {
+  left: 25px;
+  z-index: 999; }
+
+.slick-next {
+  right: 25px; }
+
+/******************************************************************************/
+/******************** END: Customising The SLICK Plugin  **********************/
+/******************************************************************************/
+/******************************************************************************/
+/***************  START: Customising Magnific Pop Up Plugin  ******************/
+/******************************************************************************/
+/******* Zoom effect *******/
+/* start state */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8); }
+
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* animate in */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+/* animate out */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0; }
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0; }
+
+/******************************************************************************/
+/****************  END: Customising Magnific Pop Up Plugin  *******************/
+/******************************************************************************/
+/*****************************************************************************************/
+/******************* START: Customising The jQuery Validation Plugin *********************/
+/*****************************************************************************************/
+.contactUs #contact-form label.error {
+  color: #e74c3c;
+  text-align: left;
+  display: block; }
+
+.contactUs #contact-form input.error,
+.contactUs #contact-form textarea.error {
+  border: 2px solid #e74c3c;
+  outline: none; }
+
+@media only screen and (max-width: 480px) {
+  .contactUs #contact-form label.error {
+    margin-bottom: 10px; } }
+/***************************************************************************************/
+/******************* END: Customising The jQuery Validation Plugin *********************/
+/***************************************************************************************/
+.js-hidden {
+  visibility: hidden; }
+
+/****************************************************************************************************************/
+/***************************************** END: Customising Plugins *********************************************/
+/****************************************************************************************************************/
+
+/*# sourceMappingURL=main.css.map */

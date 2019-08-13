@@ -1,0 +1,271 @@
+
+
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+
+/********************************/
+/*********** Mixins *************/
+/********************************/
+@mixin contact-us {
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 80px;
+}
+
+/********************************/
+/********** END Mixins **********/
+/********************************/
+
+
+
+.contactUs {
+    
+    .container{
+        padding: 81px   10px   0;
+        text-align: center;
+
+    }
+   
+} 
+
+/** Contact US Introduction **/
+
+.contactUs {
+    
+    .title  {
+       font-size: 30px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #d2054d;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    h2  {
+        margin-bottom: 28px; 
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    
+    .getInTouch {
+        
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+    }
+    
+} 
+
+
+
+/** Contact Details **/
+
+.contactUs {
+    
+    #contact_details {
+        padding: 0  10px;
+        margin-top: 61px;
+    }
+    
+} 
+
+/** Contact Detail Icons **/
+.contactUs {
+    
+    #address {
+        background-image: url(../images/icons/location.png);
+        @include contact-us;
+    }
+    
+    #phoneNumber {
+        background-image: url(../images/icons/telephone.png);
+        @include contact-us;
+    }
+    
+    #writeMail {
+        background-image: url(../images/icons/email.png);
+        @include contact-us;
+    }
+
+    
+} 
+
+
+
+
+/** Contact FORM **/
+
+.contactUs {
+    
+    #contact-form{
+        padding: 0 10px 71px;
+        text-align: center;
+
+    }
+    
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea {
+        padding: 20px;
+        border: 2px solid #000;
+        color: #000;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    textarea {
+        max-width: 100%;
+        min-height: 245px;
+        margin: 30px 0  0;
+    }
+    
+} 
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #636363;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #636363;
+}
+
+.contactUs {
+    
+    input[type=submit] {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #d2054d;
+        padding: 18px;
+        margin-top: 30px;
+        border: 3px solid transparent;
+        width: 260px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    input[type=submit]:hover {
+       background-color: #fff;
+       color:  #d2054d;
+       border: 3px solid  #d2054d;
+    }
+    
+    
+} 
+
+.contactUs {
+    
+    a {
+       text-decoration: none;
+       color: #000;
+    }
+    
+} 
+
+/*************** MEDIA QUERIES FOR THE CONTACT SECTION ****************/
+
+
+@media only screen and (max-width: 920px) {
+    
+    .contactUs {
+        
+        #address, 
+        #phoneNumber, 
+        #writeMail  {
+           width: 100%;
+           margin: 1% 0 40px;
+        }
+        
+        input[type=text],
+        input[type=tel],
+        input[type=email],
+        textarea {
+            width: 100%;
+             margin: 1%  0;
+        }
+        
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .contactUs {
+        
+        .form-elements {
+            width: 100%;
+            margin: 1% 0;
+        }
+        
+        input[type=text],
+        input[type=tel],
+        input[type=email] {
+             margin: 0;
+        }
+        
+    } 
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .contactUs {
+        
+       .title {
+           font-size: 25px;
+       } 
+        
+       .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+       }
+        
+       input[type=submit] {
+            margin: 15px 0 0;
+       }
+        
+    } 
+   
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .contactUs {
+        
+       .container{
+           padding: 71px   10px   0;
+           text-align: center;
+       } 
+        
+       input[type=text],
+       input[type=tel],
+       input[type=email],
+       textarea {
+            padding: 20px  10px;
+       } 
+        
+       input[type=submit] {
+            width: auto;
+       } 
+        
+    } 
+
+}
+
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/

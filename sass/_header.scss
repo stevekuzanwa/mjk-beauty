@@ -1,0 +1,529 @@
+
+/******************************************************/
+/*************** START: HEADER SECTION ****************/
+/******************************************************/
+
+/********************************/
+/*********** Mixins *************/
+/********************************/
+@mixin bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px;
+}
+
+/********************************/
+/********** END Mixins **********/
+/********************************/
+
+
+/** Navigation **/
+
+.header { 
+    .navigation {
+        width: 100%;
+        z-index: 9999;
+        background-color: transparent;
+        position: fixed;
+        top:0;
+
+        h1 {
+            float: left;
+            padding: 16px 0 16px 10px;
+            color: #fff;
+            font-size: 26px;
+            z-index: 999;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+
+            li {
+                float: left;
+
+                a:link,
+                a:visited {
+                    display: block;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 24px  10px 24px;
+                    text-decoration: none;
+                    color: #fff;
+                    -webkit-transition: .3s;
+                    transition: .3s;
+                }
+
+                a:hover,
+                a:active {
+                    color: #e85186;
+                }
+
+            }
+        }
+
+    }
+    
+}
+
+
+/** StickyNav with jQuery**/
+
+.is-sticky {
+    
+    .navigation {
+        background-color:  #fff;
+        width: 100%;
+        border-bottom: 1px solid #b5b2b2;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        z-index: 9999;
+        
+        h1 {
+            float: left;
+            padding: 16px 0 16px 10px;
+            font-size: 26px;
+            color: #d2054d;
+                
+            a {
+                color: #d2054d;
+            }
+
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+            
+            li {
+                float: left;
+                
+                a:link,
+                a:visited {
+                    display: block;
+                    font-weight: bold;
+                    text-align: center;
+                    padding: 24px  10px 24px;
+                    text-decoration: none;
+                    color: #d2054d; 
+                    -webkit-transition: all .5s; 
+                    transition: all .5s;
+
+                }
+
+                a:hover,
+                a:active {
+                    color: #000; 
+                    
+                }
+                
+                a.active {
+                    background-color: #d2054d;
+                    color: #fff; 
+                }
+                
+                
+            }
+
+            
+        }
+
+        
+    }
+    
+    
+}
+
+
+
+/** Mobile Nav Menu Icon **/
+
+.mobileNavIcon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.change {
+    
+    .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+    
+    .bar2 {
+        opacity: 0;
+    }
+    
+    .bar3 {
+        -webkit-transform: rotate(45deg) translate(-7px, -6px) ;
+        transform: rotate(45deg) translate(-7px, -6px) ;
+    }
+    
+} 
+
+
+.is-sticky {
+    
+    .navigation {
+        
+        .mobileNavIcon {
+            
+            .bar1,
+            .bar2,
+            .bar3 {
+                background-color: #d2054d;
+            }
+            
+        }
+        
+    }
+    
+} 
+
+
+
+
+/** BG Slides **/
+
+.header {
+    
+    #home {
+        z-index: 1;
+        position: relative;
+        height: 650px;
+    }
+  
+    .slides {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        
+        .slide1 {
+            background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.3))), url(../images/photos/header/bg-services-to-women-girls.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/photos/header/bg-services-to-women-girls.jpg);
+            @include bg-image;
+        }
+        
+        .slide2 {
+            background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/bg-love-your-hair.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/bg-love-your-hair.jpg);
+            @include bg-image;
+        }
+        
+        .slide3 {
+            background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/bg-be-unique.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/bg-be-unique.jpg);
+            @include bg-image;
+        }
+        
+        .slide4 {
+            background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/bg-be-glamorous.jpg);
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/bg-be-glamorous.jpg);
+            @include bg-image;
+        }
+
+
+    }
+
+    
+} 
+
+
+/** Header Subtitle ***/
+
+.header {
+    
+    .title {
+        text-align: center;
+        font-size: 51px;
+        color: #fff;
+        width: 100%;
+        padding: 200px 20px  0;
+        background-color: transparent;
+    }
+    
+    .details {
+        text-align: center;
+        font-size: 40px;
+        padding: 0 20px;
+        font-weight: 300;
+        color: #fff;
+    }
+   
+} 
+
+
+/** Button Area **/
+
+.header {
+  
+    .buttons {
+        text-align: center;
+        margin-top: 50px;
+        
+        a:link,
+        a:visited {
+            border: 2px solid #fff;
+            padding: 10px  16px;
+            font-weight: bold;
+            color: #fff;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s; 
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        a:hover,
+        a:active {
+            color: #d2054d;
+            background-color: white;
+        }
+
+        
+    } 
+    
+    
+}
+
+
+
+/*************** MEDIA QUERIES FOR THE HEADER SECTION ****************/
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        
+        .slides {
+            
+            .slide1,
+            .slide2,
+            .slide3,
+            .slide4 {
+                    height: 500px;
+            
+            } 
+        
+        }
+        
+    } 
+    
+    .header {
+        
+        .title {
+            font-size: 41px;
+            width: 100%;
+            margin-top: 136px;
+            padding: 0 10px;
+        }
+        
+        .details {
+            font-size: 30px;
+            padding: 0 10px;
+        }
+
+    } 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+        
+    /** Mobile Navigation **/
+
+    .mobileNavIcon {
+        display: block;    
+    }  
+
+    .navigation {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .header .navigation h1 {
+        color: #fff;
+    }
+
+    
+    .header .navigation h1 {
+        font-size: 18px;
+        float: none;
+    }
+    
+    .header .navigation ul {
+        float: none;
+        display: none;
+        background-color: #d2054d;
+    }
+    
+    .header .navigation ul li {
+       float: none;
+    }
+
+    .header .navigation ul li a:hover,
+    .header .navigation ul li a:active {
+        color: #000;
+    }
+    
+    .is-sticky .navigation h1 {
+        color: #d2054d;
+    }
+
+    
+    .is-sticky .navigation ul {
+        background-color: #d2054d;
+        border-top: 1px solid #b5b2b2;
+    }
+    
+    .is-sticky .navigation nav ul a:link, 
+    .is-sticky .navigation  nav ul a:visited  {
+        color: #fff;
+    }
+
+    .is-sticky .navigation nav ul a:hover, 
+    .is-sticky .navigation nav ul a:active {
+        color: #000;
+    }
+    
+    .is-sticky .navigation nav ul a.active {
+        color: #000; 
+    }
+    
+    /** BG Slides **/
+    
+    .header {
+        
+        .slides {
+            
+            .slide1 {
+                background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.3))), url(../images/photos/header/small-bg-services-to-women-girls.jpg);
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/photos/header/small-bg-services-to-women-girls.jpg);
+            }
+            
+            .slide2 {
+                background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/small-bg-love-your-hair.jpg);
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/small-bg-love-your-hair.jpg);
+            }
+            
+            .slide3 {
+                background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/small-bg-be-unique.jpg);
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/small-bg-be-unique.jpg);
+            }
+            
+            .slide4 {
+                background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.4))), url(../images/photos/header/small-bg-be-glamorous.jpg);
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../images/photos/header/small-bg-be-glamorous.jpg);
+            }
+
+        } 
+        
+    } 
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .header {
+        
+        .title {
+            font-size: 31px;
+        }
+        
+        .details {
+            font-size: 25px;
+        }
+
+        .buttons {
+            padding: 0 10px;
+        }
+        
+    } 
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .header {
+        
+        .details {
+            display: none;
+            
+            br {
+                display: none;
+
+            }
+        }
+        
+    } 
+
+}
+
+
+
+
+
+@media only screen and (max-width: 350px) {
+    .header {
+        
+        .navigation {
+            
+            h1 {
+                font-size: 16px;
+            }
+            
+        } 
+        
+        .title {
+            font-size: 25px;
+        }
+        
+        .details {
+            font-size: 20px;
+        }
+        
+        .buttons {
+            margin-top: 30px;
+            
+            a {
+                padding: 10px  16px;
+                display: block;
+                margin: 0 auto;
+                width: 150px;
+                text-align: center;
+            } 
+            
+        }
+        
+    } 
+    
+}
+
+
+/****************************************************/
+/*************** END: HEADER SECTION ****************/
+/****************************************************/

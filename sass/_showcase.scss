@@ -1,0 +1,205 @@
+
+/**********************************************************/
+/**************** START: SHOWCASE SECTION *****************/
+/**********************************************************/
+
+.showcase {
+    
+    .container {
+        text-align: center;
+        padding: 81px   10px   0;
+    }
+    
+} 
+
+/** Showcase Introduction **/
+
+.showcase {
+    
+   .title {
+       font-size: 30px;
+   }
+    
+   .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #d2054d;
+       margin: 0 auto;
+       margin-top: 16px;
+   }
+    
+   h2  {
+        margin-bottom: 28px; 
+   }
+    
+   p {
+        font-size: 16px;
+        line-height: 140%;
+   }
+    
+} 
+
+
+/** Showcase Menu **/
+
+.showcase {
+    
+    ul.portfolio-filter {
+        list-style-type: none;
+        margin: 30px auto 28px;
+        padding: 0;
+        width: 80%;
+        display: block;
+        
+        li {
+           display: inline-block;
+            
+            a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                color: #000;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            a.active {
+                color: #d2054d;
+            }
+            
+        }
+        
+    }
+
+    
+    
+}  
+
+
+/** showcase Gallery **/
+
+.showcase {
+    
+    ul.showcaseGallery {
+        list-style-type: none;
+        
+        li {
+            width: 20%;
+            float: left;
+            overflow: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            display: block;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+
+        }
+        
+    }
+   
+}
+
+
+.showcase {
+
+   ul.showcaseGallery {
+
+       li {
+           
+           img:hover {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+           }
+       }
+
+   }
+
+} 
+
+/** showcase Gallery Mixitup **/
+#showcase-grid .mix {
+    display: none;
+}
+
+
+/*************** MEDIA QUERIES FOR THE SHOWCASE SECTION ****************/
+
+
+@media only screen and (max-width: 1024px) {
+    
+    .showcase {
+        
+        ul.showcaseGallery {
+            
+           li {
+                width: 33.33333%;
+           } 
+            
+        } 
+        
+    } 
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .showcase {
+        
+        ul.showcaseGallery {
+            
+            li {
+                width: 50%;
+            }
+            
+        } 
+        
+    } 
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .showcase {
+        
+        .title {
+           font-size: 25px;
+         }
+        
+        .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+        }
+        
+    }  
+
+}
+
+
+@media only screen and (max-width: 320px) {
+    
+    .showcase {
+        
+        .container {
+           padding: 71px   10px   0;
+        }
+        
+    } 
+
+}
+
+
+
+/**********************************************************/
+/****************** END: SHOWCASE SECTION *****************/
+/**********************************************************/

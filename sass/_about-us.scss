@@ -1,0 +1,142 @@
+
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+
+.aboutUs {
+    height: 600px;
+    
+    div {
+        float: left;
+    }
+    
+    .ourCompany {
+       width: 50%;
+       background-color: #d2054d;
+       color: #fff;
+       height: 600px;
+       padding: 81px   20px   0;
+       text-align: center; 
+    }
+    
+    .aboutUsImage {
+       background-image: url(../images/photos/about-mjk-beauty-salon/mjk-beauty-salon.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: top center;
+       background-color: #d2054d;
+       width: 50%;
+       height: 600px;
+    }
+    
+}
+
+/** AboutUs Title **/
+
+.aboutUs {
+    
+    .ourCompany {
+        
+        .title {
+           font-size: 30px;
+        }
+        
+        .title:after {
+           display: block;
+           content:"";
+           height:12px;
+           width: 82px;
+           background-color: #fff;
+           margin: 0 auto;
+           margin-top: 16px;
+        }
+        
+        h2 {
+            margin-bottom: 28px; 
+        }
+        
+    } 
+    
+} 
+
+
+/** AboutUs Description **/
+
+
+.aboutUs {
+    
+    .ourCompany {
+        
+        p {
+            font-size: 16px;
+            line-height: 140%;
+        }
+        
+    }
+    
+} 
+
+
+/*************** MEDIA QUERIES FOR THE ABOUT US SECTION ****************/
+
+@media only screen and (max-width: 768px) {
+ 
+    .aboutUs {
+        
+       .ourCompany {
+            padding: 71px   10px   0;
+       } 
+        
+    } 
+}
+
+
+@media only screen and (max-width: 560px) {
+     
+     .aboutUs {
+        height: auto;
+         
+        div {
+            float: none;
+        }
+         
+         
+        .ourCompany {
+            width: 100%;
+            height: auto;
+            padding-bottom: 60px;
+        }
+         
+        .aboutUsImage {
+            width: 100%;
+            height: 600px;
+        }
+
+     }
+
+     /** AboutUs Title **/
+    
+     .aboutUs {
+        
+         .ourCompany {
+             
+             .title {
+                 font-size: 25px;
+             }
+             
+             .title:after {
+                 height: 6px;
+                 width: 42px;
+                 margin-top: 10px;
+             }
+             
+         }
+         
+     } 
+
+}
+
+
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/

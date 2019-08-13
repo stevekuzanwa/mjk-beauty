@@ -1,0 +1,131 @@
+
+
+/******************************************************************************/
+/******************* START: Customising The SLICK Plugin  *********************/
+/******************************************************************************/
+
+/** Dots **/
+
+.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.slick-dots li.slick-active {
+  background: #fff;
+  cursor: default;
+}
+
+
+/** Arrows **/
+
+.slick-prev {
+    left: 25px;
+    z-index: 999;
+}
+
+.slick-next {
+    right: 25px;
+
+}
+    
+
+/******************************************************************************/
+/******************** END: Customising The SLICK Plugin  **********************/
+/******************************************************************************/
+
+
+
+
+
+/******************************************************************************/
+/***************  START: Customising Magnific Pop Up Plugin  ******************/
+/******************************************************************************/
+
+
+
+/******* Zoom effect *******/
+
+/* start state */
+.mfp-zoom-in  .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; 
+    -webkit-transform: scale(0.8); 
+    transform: scale(0.8); 
+}
+  
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+  
+/* animate in */
+
+.mfp-zoom-in.mfp-ready  .mfp-with-anim {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1); 
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+      opacity: 0.8; 
+}
+ 
+/* animate out */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); 
+      opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+      opacity: 0;
+}
+    
+/******************************************************************************/
+/****************  END: Customising Magnific Pop Up Plugin  *******************/
+/******************************************************************************/
+
+
+/*****************************************************************************************/
+/******************* START: Customising The jQuery Validation Plugin *********************/
+/*****************************************************************************************/
+
+
+.contactUs #contact-form  label.error {
+    color: #e74c3c;
+    text-align: left;
+    display: block;
+}
+
+.contactUs #contact-form   input.error, 
+.contactUs #contact-form   textarea.error {
+    border: 2px solid #e74c3c;
+    outline: none;
+}
+
+@media only screen and (max-width: 480px) {
+   .contactUs #contact-form  label.error {
+        margin-bottom: 10px;
+    }
+}
+
+
+/***************************************************************************************/
+/******************* END: Customising The jQuery Validation Plugin *********************/
+/***************************************************************************************/
+
+.js-hidden  {
+    visibility: hidden;
+}

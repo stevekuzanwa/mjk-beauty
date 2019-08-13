@@ -1,0 +1,247 @@
+
+/******************************************************/
+/************** START: SERVICES SECTION ***************/
+/******************************************************/
+
+
+/********************************/
+/*********** Mixins *************/
+/********************************/
+@mixin what-we-do {
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 150px;
+}
+
+/********************************/
+/********** END Mixins **********/
+/********************************/
+
+
+.services {
+    
+   margin-top: 585px;
+    
+   .container {
+        padding: 81px   10px   0;
+        text-align: center; 
+
+    }
+    
+}
+
+
+/** Services Introduction **/
+
+.services {
+    
+    .title {
+       font-size: 30px;
+       margin-bottom: 28px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #d2054d;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    #ourServices {
+        max-width: 800px;
+        margin: 0 auto;
+        
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+    }
+    
+} 
+
+
+/** what_We_do **/
+
+.services {
+    
+    .what_We_do {
+        margin-bottom: 101px;
+    }
+
+    h2 {
+        margin-bottom: 18px; 
+    }
+    
+    #hair {
+        background-image: url(../images/icons/hair.png);
+        @include what-we-do;
+
+    }
+    
+    #makeUp {
+    background-image: url(../images/icons/makeUp.png);
+        @include what-we-do;
+
+    }
+    
+    #nails {
+        background-image: url(../images/icons/nail.png);
+        @include what-we-do;
+
+    }
+    
+    .row {
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        p {
+            font-size: 16px;
+            margin-bottom: 58px;
+        }
+
+    }
+    
+} 
+ 
+
+/** Button Area **/
+
+.services {
+    
+    a:link,
+    a:visited {
+        padding: 20px 28px;
+        background-color: #d2054d;
+        color:#fff;
+        font-weight: bold;
+        font-size: 16px;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; 
+        cursor: pointer;
+        text-decoration: none;
+        border: 2px solid transparent;
+    }
+    
+    
+    a:hover,
+    a:active {
+        background-color: #fff;
+        color:#d2054d;
+        border: 2px solid #d2054d;
+    }
+    
+} 
+
+
+/** POPUP - SERVICES READ MORE CONTENT  **/
+
+.services-popup {
+    position: relative;
+    background: #fff;
+    width: auto;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+    
+    .overlay{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        top:50%;
+        text-align: center;
+        font-size: 60px;
+        color: #fff;
+        width: 30%;
+        margin: 0 35%;
+        padding: 10px;
+
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    P {
+        padding: 20px;
+    }
+
+    
+}
+
+
+/*************** MEDIA QUERIES FOR THE SERVICES SECTION ****************/
+
+@media only screen and (max-width: 1024px) {
+     .services {
+       margin-top: 435px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .services {
+        
+        .col {
+           margin: 0 0 91px;
+        }
+        
+        .row {
+           width: 100%;
+            
+           h2 {
+              font-size: 22px;
+           }   
+            
+        }
+        
+        p {
+           font-size: 16px;
+        } 
+        
+
+    } 
+
+    .services-popup {
+        
+        .overlay{
+            display: none;
+
+        }
+    } 
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .services {
+        
+        .title {
+           font-size: 25px;
+        }
+        
+        .title:after {
+           height: 6px;
+           width: 42px;
+           margin-top: 10px;
+         }
+        
+    } 
+    
+}
+
+/******************************************************/
+/*************** END: SERVICES SECTION ****************/
+/******************************************************/

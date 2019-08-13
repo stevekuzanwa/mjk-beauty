@@ -1,0 +1,198 @@
+
+
+/**************************************************/
+/************** START: TEAM SECTION ***************/
+/**************************************************/
+
+.meetOurStylists {
+    
+    .container {
+        padding: 81px   10px   0;
+        text-align: center; 
+    }
+      
+} 
+
+
+/** Team Introduction **/
+
+.meetOurStylists {
+    
+    .title {
+       font-size: 30px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #d2054d;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    h2  {
+        margin-bottom: 28px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    
+    .ourStylists {
+        
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+    } 
+
+    
+} 
+
+
+/** Team Members **/
+
+.teamMembers {
+    margin-top: 28px;
+}
+
+.meetOurStylists {
+    
+    ul.teamMembers  {
+        list-style-type: none;
+        
+        img {
+             width: 100%;  
+        }
+        
+        li {
+            
+            p {
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                
+                span {
+                    font-size: 24px;
+                    color: #d2054d;
+                }
+                
+            }
+        }
+        
+    }
+    
+    
+} 
+
+
+/*************** MEDIA QUERIES FOR THE TEAM SECTION ****************/
+
+@media only screen and (max-width: 768px) {
+    
+    .meetOurStylists  {
+        
+        ul.teamMembers {
+            
+           .col {
+               margin: 1% 0 1%;
+           }
+            
+           li {
+               width: 100%;
+               padding: 0  180px;
+               
+               p {
+                   font-size: 16px;
+                   margin-top: 0px;
+                   margin-bottom: 10px;
+                   
+                   span {
+                       font-size: 18px;
+                   }
+                   
+               }
+               
+            }
+            
+        } 
+   
+    } 
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .meetOurStylists {
+        
+        ul.teamMembers {
+            
+            li {
+               width: 100%;
+               padding: 0 120px;
+            }
+            
+        } 
+        
+    } 
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .meetOurStylists {
+        
+        .title {
+           font-size: 25px;
+         }
+        
+        .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+        }
+        
+        ul.teamMembers {
+            
+            li {
+               width: 100%;
+               padding: 0  50px;
+            }
+               
+        } 
+   
+    } 
+
+}
+
+@media only screen and (max-width: 320px) {
+    
+   .meetOurStylists {
+       
+       .container {
+           padding: 71px   10px   0;
+           text-align: center;
+
+       }
+       
+       ul.teamMembers {
+           
+           li {
+               width: 100%;
+               padding: 0;
+            }
+       } 
+
+       
+    } 
+    
+}
+
+/************************************************/
+/************** END: TEAM SECTION ***************/
+/************************************************/
